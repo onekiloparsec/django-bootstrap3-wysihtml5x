@@ -33,5 +33,5 @@ setup(
         'Programming Language :: Python :: 3',
         'Framework :: Django',
     ],
-    test_suite = "tests",
+    test_suite = "bootstrap3_wysihtml5x",
 )
