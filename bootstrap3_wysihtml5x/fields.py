@@ -9,12 +9,11 @@ from bootstrap3_wysihtml5x.widgets import Wysihtml5xTextareaWidget
 
 class Wysihtml5xTextField(fields.TextField):
     def __init__(self, *args, **kwargs):
-        self.keep_tags = kwargs.pop('keep_tags', 
-                                    settings.WYSIHTML5_ALLOWED_TAGS)
+        self.keep_tags = kwargs.pop('keep_tags', settings.BOOTSTRAP3_WYSIHTML5X_ALLOWED_TAGS)
         super(Wysihtml5xTextField, self).__init__(*args, **kwargs)
 
     def formfield(self, **kwargs):
-        defaults = {"widget": Wysihtml5TextareaWidget}
+        defaults = {"widget": Wysihtml5xTextareaWidget}
         defaults.update(kwargs)
         return super(Wysihtml5xTextField, self).formfield(**defaults)
 
@@ -25,6 +24,6 @@ class Wysihtml5xTextField(fields.TextField):
 
 try:
     from south.modelsinspector import add_introspection_rules
-    add_introspection_rules([], ["^wysihtml5\.fields\.Wysihtml5xTextField"])
+    add_introspection_rules([], ["^bootstrap3_wysihtml5x\.fields\.Wysihtml5xTextField"])
 except ImportError:
     pass

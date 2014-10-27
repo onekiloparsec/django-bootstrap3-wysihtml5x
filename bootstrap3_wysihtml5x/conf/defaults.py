@@ -19,19 +19,19 @@ BOOTSTRAP3_WYSIHTML5X_EDITOR = {
     # tags are allowed!)
     'parserRules': 'bootstrap3_wysihtml5x_parserRules',
     # Parser method to use when the user inserts content via copy & paste
-    'parser': 'wysihtml5.dom.parse || Prototype.K',
+    'parser': 'bootstrap3_wysihtml5x.dom.parse || Prototype.K',
     # Class name which should be set on the contentEditable element in 
     # the created sandbox iframe, can be styled via the 'stylesheets' option
-    'composerClassName': '"wysihtml5-editor"',
+    'composerClassName': '"bootstrap3_wysihtml5x-editor"',
     # Class name to add to the body when the wysihtml5 editor is supported
-    'bodyClassName': '"wysihtml5-supported"',
+    'bodyClassName': '"bootstrap3_wysihtml5x-supported"',
     # By default wysihtml5 will insert <br> for line breaks, set this to
     # false to use <p>
     'useLineBreaks': 'true',
     # Array (or single string) of stylesheet urls to be loaded in the 
     # editor's iframe
     'stylesheets': '["%s"]' % (settings.STATIC_URL + 
-                               "wysihtml5/css/stylesheet.css"),
+                               "bootstrap3_wysihtml5x/css/stylesheet.css"),
     # Placeholder text to use, defaults to the placeholder attribute 
     # on the textarea element
     'placeholderText': 'null',
@@ -47,80 +47,80 @@ BOOTSTRAP3_WYSIHTML5X_TOOLBAR = {
     "formatBlockHeader": { 
         "active": True,
         "command_name": "formatBlock",
-        "render_icon": "wysihtml5.widgets.render_formatBlockHeader_icon"
+        "render_icon": "bootstrap3_wysihtml5x.widgets.render_formatBlockHeader_icon"
     },
     "formatBlockParagraph": { 
         "active": True,
         "command_name": "formatBlock",
-        "render_icon": "wysihtml5.widgets.render_formatBlockParagraph_icon"
+        "render_icon": "bootstrap3_wysihtml5x.widgets.render_formatBlockParagraph_icon"
     },
     "bold": { 
         "active": True,
         "command_name": "bold",
-        "render_icon": "wysihtml5.widgets.render_bold_icon"
+        "render_icon": "bootstrap3_wysihtml5x.widgets.render_bold_icon"
     },
     "italic": { 
         "active": True,
         "command_name": "italic",
-        "render_icon": "wysihtml5.widgets.render_italic_icon"
+        "render_icon": "bootstrap3_wysihtml5x.widgets.render_italic_icon"
     },
     "underline": { 
         "active": True,
         "command_name": "underline",
-        "render_icon": "wysihtml5.widgets.render_underline_icon"
+        "render_icon": "bootstrap3_wysihtml5x.widgets.render_underline_icon"
     },
     "justifyLeft": { 
         "active": True,
         "command_name": "justifyLeft",
-        "render_icon": "wysihtml5.widgets.render_justifyLeft_icon"
+        "render_icon": "bootstrap3_wysihtml5x.widgets.render_justifyLeft_icon"
     },
     "justifyCenter": { 
         "active": True,
         "command_name": "justifyCenter",
-        "render_icon": "wysihtml5.widgets.render_justifyCenter_icon"
+        "render_icon": "bootstrap3_wysihtml5x.widgets.render_justifyCenter_icon"
     },
     "justifyRight": { 
         "active": True,
         "command_name": "justifyRight",
-        "render_icon": "wysihtml5.widgets.render_justifyRight_icon"
+        "render_icon": "bootstrap3_wysihtml5x.widgets.render_justifyRight_icon"
     },
     "insertOrderedList": { 
         "active": True,
         "command_name": "insertOrderedList",
-        "render_icon": "wysihtml5.widgets.render_insertOrderedList_icon"
+        "render_icon": "bootstrap3_wysihtml5x.widgets.render_insertOrderedList_icon"
     },
     "insertUnorderedList": { 
         "active": True,
         "command_name": "insertUnorderedList",
-        "render_icon": "wysihtml5.widgets.render_insertUnorderedList_icon"
+        "render_icon": "bootstrap3_wysihtml5x.widgets.render_insertUnorderedList_icon"
     },
     "insertImage": { 
         "active": True,
         "command_name": "insertImage",
-        "render_icon": "wysihtml5.widgets.render_insertImage_icon",
-        "render_dialog": "wysihtml5.widgets.render_insertImage_dialog"
+        "render_icon": "bootstrap3_wysihtml5x.widgets.render_insertImage_icon",
+        "render_dialog": "bootstrap3_wysihtml5x.widgets.render_insertImage_dialog"
     },
     "createLink": { 
         "active": True,
         "command_name": "createLink",
-        "render_icon": "wysihtml5.widgets.render_createLink_icon",
-        "render_dialog": "wysihtml5.widgets.render_createLink_dialog"
+        "render_icon": "bootstrap3_wysihtml5x.widgets.render_createLink_icon",
+        "render_dialog": "bootstrap3_wysihtml5x.widgets.render_createLink_dialog"
     },
     "insertHTML": { 
         "active": True,
         "command_name": "insertHTML",
         "command_value": "<blockquote>quote</blockquote>",
-        "render_icon": "wysihtml5.widgets.render_insertHTML_icon"
+        "render_icon": "bootstrap3_wysihtml5x.widgets.render_insertHTML_icon"
     },
     "foreColor": { 
         "active": True,
         "command_name": "foreColor",
-        "render_icon": "wysihtml5.widgets.render_foreColor_icon"
+        "render_icon": "bootstrap3_wysihtml5x.widgets.render_foreColor_icon"
     },
     "changeView": { 
         "active": True,
         "command_name": "change_view",
-        "render_icon": "wysihtml5.widgets.render_changeView_icon"
+        "render_icon": "bootstrap3_wysihtml5x.widgets.render_changeView_icon"
     },
 }
 

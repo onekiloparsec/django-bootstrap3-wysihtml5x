@@ -57,43 +57,43 @@ def render_formatBlockHeader_icon(id):
         <span data-bootstrap3_wysihtml5x-command="%(command_name)s" data-bootstrap3_wysihtml5x-command-value="h5">H5</span>\
         <span data-bootstrap3_wysihtml5x-command="%(command_name)s" data-bootstrap3_wysihtml5x-command-value="h6">H6</span>\
       </div>\
-    </span>' % { "command_name": settings.WYSIHTML5_TOOLBAR['formatBlockHeader']['command_name'] }
+    </span>' % { "command_name": settings.BOOTSTRAP3_WYSIHTML5X_TOOLBAR['formatBlockHeader']['command_name'] }
 
 def render_formatBlockParagraph_icon(id):
-    return '<span data-bootstrap3_wysihtml5x-command="%(command_name)s" title="Make a paragraph block" data-bootstrap3_wysihtml5x-command-value="p" class="command format-block-p"></span>' % { "command_name": settings.WYSIHTML5_TOOLBAR['formatBlockParagraph']['command_name'] }
+    return '<span data-bootstrap3_wysihtml5x-command="%(command_name)s" title="Make a paragraph block" data-bootstrap3_wysihtml5x-command-value="p" class="command format-block-p"></span>' % { "command_name": settings.BOOTSTRAP3_WYSIHTML5X_TOOLBAR['formatBlockParagraph']['command_name'] }
 
 def render_bold_icon(id):
-    return '<span data-bootstrap3_wysihtml5x-command="%(command_name)s" title="Make text bold (CTRL + B)" class="command"></span>' % { "command_name": settings.WYSIHTML5_TOOLBAR['bold']['command_name'] }
+    return '<span data-bootstrap3_wysihtml5x-command="%(command_name)s" title="Make text bold (CTRL + B)" class="command"></span>' % { "command_name": settings.BOOTSTRAP3_WYSIHTML5X_TOOLBAR['bold']['command_name'] }
 
 def render_italic_icon(id):
-    return '<span data-bootstrap3_wysihtml5x-command="%(command_name)s" title="Make text italic (CTRL + I)" class="command"></span>' % { "command_name": settings.WYSIHTML5_TOOLBAR['italic']['command_name'] }
+    return '<span data-bootstrap3_wysihtml5x-command="%(command_name)s" title="Make text italic (CTRL + I)" class="command"></span>' % { "command_name": settings.BOOTSTRAP3_WYSIHTML5X_TOOLBAR['italic']['command_name'] }
 
 def render_underline_icon(id):
-    return '<span data-bootstrap3_wysihtml5x-command="%(command_name)s" title="Underline text (CTRL + U)" class="command"></span>' % { "command_name": settings.WYSIHTML5_TOOLBAR['underline']['command_name'] }
+    return '<span data-bootstrap3_wysihtml5x-command="%(command_name)s" title="Underline text (CTRL + U)" class="command"></span>' % { "command_name": settings.BOOTSTRAP3_WYSIHTML5X_TOOLBAR['underline']['command_name'] }
 
 def render_justifyLeft_icon(id):
-    return '<span data-bootstrap3_wysihtml5x-command="%(command_name)s" title="Paragraph left justified" class="command"></span>' % { "command_name": settings.WYSIHTML5_TOOLBAR['justifyLeft']['command_name'] }
+    return '<span data-bootstrap3_wysihtml5x-command="%(command_name)s" title="Paragraph left justified" class="command"></span>' % { "command_name": settings.BOOTSTRAP3_WYSIHTML5X_TOOLBAR['justifyLeft']['command_name'] }
 
 def render_justifyCenter_icon(id):
-    return '<span data-bootstrap3_wysihtml5x-command="%(command_name)s" title="Paragraph center justified" class="command"></span>' % { "command_name": settings.WYSIHTML5_TOOLBAR['justifyCenter']['command_name'] }
+    return '<span data-bootstrap3_wysihtml5x-command="%(command_name)s" title="Paragraph center justified" class="command"></span>' % { "command_name": settings.BOOTSTRAP3_WYSIHTML5X_TOOLBAR['justifyCenter']['command_name'] }
 
 def render_justifyRight_icon(id):
-    return '<span data-bootstrap3_wysihtml5x-command="%(command_name)s" title="Paragraph right justified" class="command"></span>' % { "command_name": settings.WYSIHTML5_TOOLBAR['justifyRight']['command_name'] }
+    return '<span data-bootstrap3_wysihtml5x-command="%(command_name)s" title="Paragraph right justified" class="command"></span>' % { "command_name": settings.BOOTSTRAP3_WYSIHTML5X_TOOLBAR['justifyRight']['command_name'] }
 
 def render_insertOrderedList_icon(id):
-    return '<span data-bootstrap3_wysihtml5x-command="%(command_name)s" title="Insert an ordered list" class="command"></span>' % { "command_name": settings.WYSIHTML5_TOOLBAR['insertOrderedList']['command_name'] }
+    return '<span data-bootstrap3_wysihtml5x-command="%(command_name)s" title="Insert an ordered list" class="command"></span>' % { "command_name": settings.BOOTSTRAP3_WYSIHTML5X_TOOLBAR['insertOrderedList']['command_name'] }
 
 def render_insertUnorderedList_icon(id):
-    return '<span data-bootstrap3_wysihtml5x-command="%(command_name)s" title="Insert an unordered list" class="command"></span>' % { "command_name": settings.WYSIHTML5_TOOLBAR['insertUnorderedList']['command_name'] }
+    return '<span data-bootstrap3_wysihtml5x-command="%(command_name)s" title="Insert an unordered list" class="command"></span>' % { "command_name": settings.BOOTSTRAP3_WYSIHTML5X_TOOLBAR['insertUnorderedList']['command_name'] }
 
 def render_insertImage_icon(id):
-    return '<span data-bootstrap3_wysihtml5x-command="%(command_name)s" title="Insert an image" class="command insert-image"></span>' % { 'command_name': settings.WYSIHTML5_TOOLBAR['insertImage']['command_name'] }
+    return '<span data-bootstrap3_wysihtml5x-command="%(command_name)s" title="Insert an image" class="command insert-image"></span>' % { 'command_name': settings.BOOTSTRAP3_WYSIHTML5X_TOOLBAR['insertImage']['command_name'] }
 
 def render_createLink_icon(id):
-    return '<span data-bootstrap3_wysihtml5x-command="%(command_name)s" title="Insert a link" class="command create-link"></span>' % { 'command_name': settings.WYSIHTML5_TOOLBAR['createLink']['command_name'] }
+    return '<span data-bootstrap3_wysihtml5x-command="%(command_name)s" title="Insert a link" class="command create-link"></span>' % { 'command_name': settings.BOOTSTRAP3_WYSIHTML5X_TOOLBAR['createLink']['command_name'] }
 
 def render_insertHTML_icon(id):
-    return '<span data-bootstrap3_wysihtml5x-command="%(command_name)s" title="Insert a quote" class="command" data-bootstrap3_wysihtml5x-command-value="%(command_value)s"></span>'  % {  'command_name': settings.WYSIHTML5_TOOLBAR['insertHTML']['command_name'] , 'command_value': settings.WYSIHTML5_TOOLBAR['insertHTML']['command_value'] }
+    return '<span data-bootstrap3_wysihtml5x-command="%(command_name)s" title="Insert a quote" class="command" data-bootstrap3_wysihtml5x-command-value="%(command_value)s"></span>'  % {  'command_name': settings.BOOTSTRAP3_WYSIHTML5X_TOOLBAR['insertHTML']['command_name'] , 'command_value': settings.BOOTSTRAP3_WYSIHTML5X_TOOLBAR['insertHTML']['command_value'] }
 
 def render_foreColor_icon(id):
     return '\
@@ -109,10 +109,10 @@ def render_foreColor_icon(id):
         <span data-bootstrap3_wysihtml5x-command="%(command_name)s" data-bootstrap3_wysihtml5x-command-value="navy" unselectable="on"></span>\
         <span data-bootstrap3_wysihtml5x-command="%(command_name)s" data-bootstrap3_wysihtml5x-command-value="blue" unselectable="on"></span>\
       </div>\
-    </span>' % { 'command_name': settings.WYSIHTML5_TOOLBAR['foreColor']['command_name'] }
+    </span>' % { 'command_name': settings.BOOTSTRAP3_WYSIHTML5X_TOOLBAR['foreColor']['command_name'] }
 
 def render_changeView_icon(id):
-    return '<span data-bootstrap3_wysihtml5x-action="%(command_name)s" title="Show HTML" class="action" unselectable="on"></span>' % { 'command_name': settings.WYSIHTML5_TOOLBAR['changeView']['command_name'] }
+    return '<span data-bootstrap3_wysihtml5x-action="%(command_name)s" title="Show HTML" class="action" unselectable="on"></span>' % { 'command_name': settings.BOOTSTRAP3_WYSIHTML5X_TOOLBAR['changeView']['command_name'] }
 
 
 class Wysihtml5xTextareaWidget(AdminTextareaWidget):
@@ -132,19 +132,18 @@ class Wysihtml5xTextareaWidget(AdminTextareaWidget):
         if editor_settings:
             self.editor_settings = editor_settings
         else: 
-            self.editor_settings = settings.WYSIHTML5_EDITOR
+            self.editor_settings = settings.BOOTSTRAP3_WYSIHTML5X_EDITOR
 
         if toolbar_settings:
             self.toolbar_settings = toolbar_settings
         else:
-            self.toolbar_settings = settings.WYSIHTML5_TOOLBAR
+            self.toolbar_settings = settings.BOOTSTRAP3_WYSIHTML5X_TOOLBAR
 
         self.render_cmd_icon = {}
         self.render_cmd_dialog = {}
         for k, v in six.iteritems(self.toolbar_settings):
             if v.get("active", False):
-                self.render_cmd_icon[k] = v.get("render_icon", 
-                                                "bootstrap3_wysihtml5x.widgets.render_blank")
+                self.render_cmd_icon[k] = v.get("render_icon", "bootstrap3_wysihtml5x.widgets.render_blank")
                 if v.get("render_dialog", False):
                     self.render_cmd_dialog[k] = v["render_dialog"]
             else: 
@@ -216,11 +215,11 @@ class Wysihtml5xTextareaWidget(AdminTextareaWidget):
     var id = '%(id)s';
     var name = '%(name)s';
     var toolbar = %(toolbar)s;
-    if(typeof(window._wysihtml5_inited) == 'undefined') {
-      window._wysihtml5_inited = []
+    if(typeof(window._wysihtml5x_inited) == 'undefined') {
+      window._wysihtml5x_inited = []
     }
-    if(typeof(window._wysihtml5_inited[id]) == 'undefined') {
-      window._wysihtml5_inited[id] = true;
+    if(typeof(window._wysihtml5x_inited[id]) == 'undefined') {
+      window._wysihtml5x_inited[id] = true;
     } else {
       var totforms = parseInt(document.getElementById('%(prefixid)sTOTAL_FORMS').value)-1;
       var newid = id.replace(/__prefix__/, totforms);
@@ -229,7 +228,7 @@ class Wysihtml5xTextareaWidget(AdminTextareaWidget):
       django.jQuery('#'+toolbar).attr('id', newtoolbar);
       console.log(newid);
       if(document.getElementById(newid)) {
-        new wysihtml5.Editor(newid,{
+        new bootstrap3_wysihtml5x.Editor(newid,{
           name:                 name,
           style:                %(style)s,
           toolbar:              newtoolbar,
@@ -257,7 +256,7 @@ class Wysihtml5xTextareaWidget(AdminTextareaWidget):
             options['toolbar'] = '"%s-toolbar"' % id
         widget = '''
 <script>
-  new wysihtml5.Editor("%(id)s",{
+  new bootstrap3_wysihtml5x.Editor("%(id)s",{
     name:                 %(name)s,
     style:                %(style)s,
     toolbar:              %(toolbar)s,

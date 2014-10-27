@@ -19,7 +19,7 @@ def run_tests():
 
     runner = get_runner(settings, "django.test.simple.DjangoTestSuiteRunner")
     test_suite = runner(verbosity=2, interactive=True, failfast=False)
-    test_suite.run_tests(["wysihtml5"])
+    test_suite.run_tests(["bootstrap3_wysihtml5x"])
 
 
 def suite():
@@ -31,7 +31,7 @@ def suite():
         settings.INSTALLED_APPS = list(settings.INSTALLED_APPS) + ['bootstrap3_wysihtml5x.tests']
         map(load_app, settings.INSTALLED_APPS)
 
-    from wysihtml5.tests import fields, widgets
+    from bootstrap3_wysihtml5x.tests import fields, widgets
 
     testsuite = unittest.TestSuite([
         unittest.TestLoader().loadTestsFromModule(fields),

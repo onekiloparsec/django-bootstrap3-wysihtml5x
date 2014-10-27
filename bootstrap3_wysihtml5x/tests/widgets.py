@@ -71,7 +71,7 @@ class Wysihtml5xTextareaWidgetTestCase(DjangoTestCase):
   <div class="bootstrap3_wysihtml5x-dialogs">\
     <div data-bootstrap3_wysihtml5x-dialog="insertImage" style="display:none">  <label>Image:</label>&nbsp;  <input data-bootstrap3_wysihtml5x-dialog-field="src" value="http://">  <a data-bootstrap3_wysihtml5x-dialog-action="save" class="button">Ok</a>&nbsp;  <a data-bootstrap3_wysihtml5x-dialog-action="cancel" class="button">Cancel</a></div>  </div></div><textarea rows="25" cols="40" name="test" class="vLargeTextField">One giant leap for mankind</textarea></div>\
 <script>\
-new wysihtml5.Editor("unknown",{ name: null, style: true, toolbar: "unknown-toolbar", autoLink: true, parserRules: bootstrap3_wysihtml5x_parserRules, parser: wysihtml5.dom.parse || Prototype.K, composerClassName: "wysihtml5-editor", bodyClassName: "wysihtml5-supported", useLineBreaks: true, stylesheets: ["/static/wysihtml5/css/stylesheet.css"], placeholderText: null, allowObjectResizing: true, supportTouchDevices: true });\
+new bootstrap3_wysihtml5x.Editor("unknown",{ name: null, style: true, toolbar: "unknown-toolbar", autoLink: true, parserRules: bootstrap3_wysihtml5x_parserRules, parser: bootstrap3_wysihtml5x.dom.parse || Prototype.K, composerClassName: "bootstrap3_wysihtml5x-editor", bodyClassName: "bootstrap3_wysihtml5x-supported", useLineBreaks: true, stylesheets: ["/static/bootstrap3_wysihtml5x/css/stylesheet.css"], placeholderText: null, allowObjectResizing: true, supportTouchDevices: true });\
 </script>'
         self.maxDiff = None
         self.assertHTMLEqual(expected, rendered)

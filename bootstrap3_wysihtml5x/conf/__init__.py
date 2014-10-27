@@ -3,7 +3,7 @@ import six
 from django.conf import settings as django_settings
 from django.utils.functional import LazyObject
 
-from bootstrap3_wysihtml5.conf import defaults as app_settings
+from bootstrap3_wysihtml5x.conf import defaults as app_settings
 
 
 class LazySettings(LazyObject):

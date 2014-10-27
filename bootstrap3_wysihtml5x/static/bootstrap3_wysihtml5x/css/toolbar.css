@@ -214,7 +214,7 @@ DIV.commands > SPAN {
   background: blue !important;
 }
 
-.fore-color .wysihtml5-command-active {
+.fore-color .bootstrap3_wysihtml5x-command-active {
   outline: 1px solid #666;
   outline-offset: 1px;
 }

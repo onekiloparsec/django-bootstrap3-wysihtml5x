@@ -33,5 +33,5 @@ setup(
         'Programming Language :: Python :: 3',
         'Framework :: Django',
     ],
-    test_suite = "dummy",
+    test_suite = "tests",
 )
