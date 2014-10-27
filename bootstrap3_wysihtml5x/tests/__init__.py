@@ -14,6 +14,9 @@ def run_tests():
     if not os.environ.get("DJANGO_SETTINGS_MODULE", False):
         setup_django_settings()
 
+    import django
+    django.setup()
+
     from django.conf import settings
     from django.test.utils import get_runner
 

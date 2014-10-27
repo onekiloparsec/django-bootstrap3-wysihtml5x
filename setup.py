@@ -4,9 +4,6 @@
 from setuptools import setup, find_packages
 from setuptools.command.test import test
 
-import django
-django.setup()
-
 def run_tests(*args):
     from bootstrap3_wysihtml5x.tests import run_tests
     run_tests()
