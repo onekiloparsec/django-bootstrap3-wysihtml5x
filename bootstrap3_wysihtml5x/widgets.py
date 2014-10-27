@@ -115,7 +115,7 @@ def render_changeView_icon(id):
     return '<span data-bootstrap3_wysihtml5x-action="%(command_name)s" title="Show HTML" class="action" unselectable="on"></span>' % { 'command_name': settings.WYSIHTML5_TOOLBAR['changeView']['command_name'] }
 
 
-class Wysihtml5TextareaWidget(AdminTextareaWidget):
+class Wysihtml5xTextareaWidget(AdminTextareaWidget):
 
     class Media:
         css = {
@@ -152,7 +152,7 @@ class Wysihtml5TextareaWidget(AdminTextareaWidget):
                 if v.get("render_dialog", False):
                     self.render_cmd_dialog[k] = "bootstrap3_wysihtml5x.widgets.render_blank"
 
-        super(Wysihtml5TextareaWidget, self).__init__(attrs=attrs)
+        super(Wysihtml5xTextareaWidget, self).__init__(attrs=attrs)
 
     def render(self, name, value, attrs=None):
         if value is None: value = ''

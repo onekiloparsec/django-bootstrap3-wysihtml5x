@@ -2,7 +2,7 @@
 
 from django.db import models
 
-from wysihtml5.fields import Wysihtml5TextField
+from bootstrap3_wysihtml5x.fields import Wysihtml5xTextField
 
 class ModelTest(models.Model):
     first_text = models.TextField()

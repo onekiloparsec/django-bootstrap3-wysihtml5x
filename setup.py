@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 from setuptools.command.test import test
 
 def run_tests(*args):
-    from wysihtml5.tests import run_tests
+    from bootstrap3_wysihtml5x.tests import run_tests
     run_tests()
 
 test.run_tests = run_tests

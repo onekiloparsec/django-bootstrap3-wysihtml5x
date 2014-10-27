@@ -17,7 +17,7 @@ MANAGERS = ADMINS
 DATABASES = {
     'default': {
         'ENGINE':   'django.db.backends.sqlite3', 
-        'NAME':     'django_wysihtml5_test',
+        'NAME':     'django_bootstrap3_wysihtml5x_test',
         'USER':     '', 
         'PASSWORD': '', 
         'HOST':     '', 
@@ -30,7 +30,7 @@ DATABASES = {
 # although not all choices may be available on all operating systems.
 # If running in a Windows environment this must be set to the same as your
 # system time zone.
-TIME_ZONE = 'Europe/Madrid'
+TIME_ZONE = 'Europe/Paris'
 
 # Language code for this installation. All choices can be found here:
 # http://www.i18nguy.com/unicode/language-identifiers.html
@@ -68,7 +68,7 @@ MIDDLEWARE_CLASSES = (
     # 'django.contrib.auth.middleware.AuthenticationMiddleware',
 )
 
-ROOT_URLCONF = 'wysihtml5.tests.urls'
+ROOT_URLCONF = 'bootstrap3_wysihtml5x.tests.urls'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
@@ -81,11 +81,11 @@ TEMPLATE_DIRS = (
 INSTALLED_APPS = [
     "django.contrib.contenttypes",
     'django.contrib.sites',
-    'wysihtml5',
-    'wysihtml5.tests',
+    'bootstrap3_wysihtml5x',
+    'bootstrap3_wysihtml5x.tests',
 ]
 
-WYSIHTML5_TOOLBAR = {
+BOOSTRAP3_WYSIHTML5X_TOOLBAR = {
     "foreColor": { "active": False },
     "createLink": { "active": False }
 }

@@ -1,24 +1,23 @@
 #-*- coding: utf-8 -*-
 from __future__ import unicode_literals
 
-from bs4 import BeautifulSoup, NavigableString
+from bs4 import BeautifulSoup
 
-from django import forms
 from django.forms.models import modelform_factory
 from django.forms.widgets import Textarea
 from django.test import TestCase as DjangoTestCase
 
-from wysihtml5.tests.models import ModelTest
-from wysihtml5.widgets import Wysihtml5TextareaWidget
+from bootstrap3_wysihtml5x.tests.models import ModelTest
+from bootstrap3_wysihtml5x.widgets import Wysihtml5xTextareaWidget
 
 
-class Wysihtml5TextFieldTestCase(DjangoTestCase):
+class Wysihtml5xTextFieldTestCase(DjangoTestCase):
     def test_widget_for_wysihtml5textfield_model_field(self):
         form = modelform_factory(ModelTest)()
         first_widget = form.fields.get("first_text").widget
         second_widget = form.fields.get("second_text").widget
         self.assertEqual(first_widget.__class__, Textarea)
-        self.assertEqual(second_widget.__class__, Wysihtml5TextareaWidget)
+        self.assertEqual(second_widget.__class__, Wysihtml5xTextareaWidget)
 
 
 class KeepTagsTestCase(DjangoTestCase):

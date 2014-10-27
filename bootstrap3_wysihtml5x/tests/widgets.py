@@ -7,12 +7,10 @@ from django.forms.models import modelform_factory
 from django.test import TestCase as DjangoTestCase
 from django.utils.html import conditional_escape
 
-from wysihtml5.tests.models import ModelTest
-from wysihtml5.widgets import (Wysihtml5TextareaWidget,
-                               render_cmd_icon, render_cmd_dialog)
+from bootstrap3_wysihtml5x.tests.models import ModelTest
+from bootstrap3_wysihtml5x.widgets import Wysihtml5xTextareaWidget
 
-
-class Wysihtml5ToolbarTestCase(DjangoTestCase):
+class Wysihtml5xToolbarTestCase(DjangoTestCase):
     def setUp(self):
         ModelForm = modelform_factory(ModelTest)
         # self.soup = BeautifulSoup(unicode(ModelForm()))
@@ -37,12 +35,12 @@ class Wysihtml5ToolbarTestCase(DjangoTestCase):
         self.assert_(dialog_create_link == None) # tests.settings disabled
 
 
-class Wysihtml5TextareaWidgetTestCase(DjangoTestCase):
+class Wysihtml5xTextareaWidgetTestCase(DjangoTestCase):
     def test_render_wysihtml5admintextarea_widget(self):
         neilmsg = ModelTest.objects.create(
             first_text="One small step for man", 
             second_text="One giant leap for mankind")
-        w = Wysihtml5TextareaWidget()
+        w = Wysihtml5xTextareaWidget()
         rendered = conditional_escape(w.render("test", neilmsg.second_text))
         expected = '\
 <div style="display:inline-block"><div id="unknown-toolbar" class="bootstrap3_wysihtml5x-editor-toolbar">\
