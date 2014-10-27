@@ -10,11 +10,11 @@ class Wysihtml5BootstrapWidget(Wysihtml5TextareaWidget):
         # read https://docs.djangoproject.com/en/1.5/topics/forms/media/
         extend = False
         css = {'all': ('css/bootstrap.min.css',
-                       'css/bootstrap-wysihtml5.css')}
-        js = ('wysihtml5/js/advanced.js',
-              'wysihtml5/js/wysihtml5-0.3.0.min.js',
+                       'css/bootstrap-django-bootstrap3-wysihtml5x.css')}
+        js = ('django-bootstrap3-wysihtml5x/js/advanced.js',
+              'django-bootstrap3-wysihtml5x/js/django-bootstrap3-wysihtml5x-0.3.0.min.js',
               'js/bootstrap.min.js',
-              'js/bootstrap-wysihtml5.js',)
+              'js/bootstrap-django-bootstrap3-wysihtml5x.js',)
 
     def __init__(self, attrs=None, **kwargs):
         if not attrs:
@@ -36,7 +36,7 @@ class Wysihtml5BootstrapWidget(Wysihtml5TextareaWidget):
             options['toolbar'] = '"%s-toolbar"' % id
         widget = '''
 <script>
-  $("#%(id)s").wysihtml5({
+  $("#%(id)s").django-bootstrap3-wysihtml5x({
     "font-styles": true,
     "emphasis": true,
     "lists": true,

@@ -1,7 +1,7 @@
 #-*- coding: utf-8 -*-
 
-from wysihtml5.fields import Wysihtml5TextField
-from wysihtml5.widgets import Wysihtml5TextareaWidget
+from bootstrap3_wysihtml5x.fields import Wysihtml5TextField
+from bootstrap3_wysihtml5x.widgets import Wysihtml5TextareaWidget
 
 class AdminWysihtml5TextFieldMixin(object):
     """Mixin for ModelAdmin subclasses to provide custom widget for ``Wysihtml5TextField`` fields."""

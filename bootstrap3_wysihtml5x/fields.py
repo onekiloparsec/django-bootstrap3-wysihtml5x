@@ -2,9 +2,9 @@
 
 from django.db.models import fields
 
-from wysihtml5.conf import settings
-from wysihtml5.utils import keeptags
-from wysihtml5.widgets import Wysihtml5TextareaWidget
+from bootstrap3_wysihtml5x.conf import settings
+from bootstrap3_wysihtml5x.utils import keeptags
+from bootstrap3_wysihtml5x.widgets import Wysihtml5TextareaWidget
 
 
 class Wysihtml5TextField(fields.TextField):

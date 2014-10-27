@@ -108,7 +108,7 @@ INSTALLED_APPS = (
     "django.contrib.staticfiles",
     "django.contrib.admin",
 
-    "wysihtml5",
+    "django-bootstrap3-wysihtml5x",
     "articles",
 )
 
@@ -148,7 +148,7 @@ LOGGING = {
             'level': 'ERROR',
             'propagate': True,
         },
-        'wysihtml5': {
+        'django-bootstrap3-wysihtml5x': {
             'handlers': ['console'],
             'level': 'INFO',
         }

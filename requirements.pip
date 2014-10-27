@@ -1,2 +1,2 @@
 six
-Django
+Django>=1.6

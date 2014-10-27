@@ -2,7 +2,7 @@
 
 from django.conf import settings
 
-WYSIHTML5_EDITOR = {
+BOOTSTRAP3_WYSIHTML5X_EDITOR = {
     # Give the editor a name, the name will also be set as class 
     # name on the iframe and on the iframe's body
     'name': 'null',
@@ -17,7 +17,7 @@ WYSIHTML5_EDITOR = {
     # Object which includes parser rules (set this to 
     # examples/rules/spec.json or your own spec, otherwise only span 
     # tags are allowed!)
-    'parserRules': 'wysihtml5ParserRules',
+    'parserRules': 'bootstrap3_wysihtml5x_parserRules',
     # Parser method to use when the user inserts content via copy & paste
     'parser': 'wysihtml5.dom.parse || Prototype.K',
     # Class name which should be set on the contentEditable element in 
@@ -43,7 +43,7 @@ WYSIHTML5_EDITOR = {
     'supportTouchDevices': 'true'
 }
 
-WYSIHTML5_TOOLBAR = {
+BOOTSTRAP3_WYSIHTML5X_TOOLBAR = {
     "formatBlockHeader": { 
         "active": True,
         "command_name": "formatBlock",
@@ -127,5 +127,4 @@ WYSIHTML5_TOOLBAR = {
 # This is necessary to protect the field of content in cases where
 # the user disables JavaScript in the browser, so that Wysihtml5 can't
 # do the filter job.
-WYSIHTML5_ALLOWED_TAGS = ('h1 h2 h3 h4 h5 h6 div p b i u'
-                          ' ul ol li span img a blockquote')
+BOOTSTRAP3_WYSIHTML5X_ALLOWED_TAGS = ('h1 h2 h3 h4 h5 h6 div p b i u ul ol li span img a blockquote')
