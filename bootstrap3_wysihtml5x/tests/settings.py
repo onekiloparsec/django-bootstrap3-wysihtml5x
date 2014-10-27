@@ -85,7 +85,7 @@ INSTALLED_APPS = [
     'bootstrap3_wysihtml5x.tests',
 ]
 
-BOOSTRAP3_WYSIHTML5X_TOOLBAR = {
+BOOTSTRAP3_WYSIHTML5X_TOOLBAR = {
     "foreColor": { "active": False },
     "createLink": { "active": False }
 }
